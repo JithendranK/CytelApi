@@ -7,6 +7,8 @@ namespace Cytel.Top.Api.Controllers
     /// <summary>
     /// Api controller performing S3 Bucket operations
     /// </summary>
+    [ApiVersion("2.0")]
+    [Route("api/v{v:apiVersion}/Values")]
     [Produces("application/json")]
     [Route("api/S3Bucket")]
     public class S3BucketController : ControllerBase

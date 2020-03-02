@@ -4,6 +4,58 @@
     "D:\\CytelProjects\\CytelApi\\Cytel.Api.Test.Xunit\\Cytel.Api.Test.Xunit.csproj": {}
   },
   "projects": {
+    "D:\\CytelProjects\\CytelApi\\Contracts\\Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CytelProjects\\CytelApi\\Contracts\\Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "D:\\CytelProjects\\CytelApi\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\jithendrank\\.nuget\\packages\\",
+        "outputPath": "D:\\CytelProjects\\CytelApi\\Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jithendrank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\CytelProjects\\CytelApi\\Cytel.Api.Test.Xunit\\Cytel.Api.Test.Xunit.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -168,6 +220,9 @@
             "projectReferences": {
               "D:\\CytelProjects\\CytelApi\\Cytel.Top.SQS\\Cytel.Top.SQS.csproj": {
                 "projectPath": "D:\\CytelProjects\\CytelApi\\Cytel.Top.SQS\\Cytel.Top.SQS.csproj"
+              },
+              "D:\\CytelProjects\\CytelApi\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "D:\\CytelProjects\\CytelApi\\LoggerService\\LoggerService.csproj"
               }
             }
           }
@@ -196,6 +251,10 @@
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Versioning": {
+              "target": "Package",
+              "version": "[4.1.1, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -236,6 +295,68 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\CytelProjects\\CytelApi\\LoggerService\\LoggerService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\CytelProjects\\CytelApi\\LoggerService\\LoggerService.csproj",
+        "projectName": "LoggerService",
+        "projectPath": "D:\\CytelProjects\\CytelApi\\LoggerService\\LoggerService.csproj",
+        "packagesPath": "C:\\Users\\jithendrank\\.nuget\\packages\\",
+        "outputPath": "D:\\CytelProjects\\CytelApi\\LoggerService\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\jithendrank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\CytelProjects\\CytelApi\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\CytelProjects\\CytelApi\\Contracts\\Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[1.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

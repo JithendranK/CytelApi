@@ -1,0 +1,2 @@
+2020-03-02 08:49:02.3331 INFO Getting All Study Related Objects From Study Servce.
+2020-03-02 08:49:05.0490 INFO Successfully returned values

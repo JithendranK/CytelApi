@@ -1,0 +1,11 @@
+D:\CytelProjects\CytelApi\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.deps.json
+D:\CytelProjects\CytelApi\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.dll
+D:\CytelProjects\CytelApi\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csprojAssemblyReference.cache
+D:\CytelProjects\CytelApi\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfoInputs.cache
+D:\CytelProjects\CytelApi\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.AssemblyInfo.cs
+D:\CytelProjects\CytelApi\LoggerService\bin\Debug\netcoreapp3.1\LoggerService.pdb
+D:\CytelProjects\CytelApi\LoggerService\bin\Debug\netcoreapp3.1\Contracts.dll
+D:\CytelProjects\CytelApi\LoggerService\bin\Debug\netcoreapp3.1\Contracts.pdb
+D:\CytelProjects\CytelApi\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.csproj.CopyComplete
+D:\CytelProjects\CytelApi\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.dll
+D:\CytelProjects\CytelApi\LoggerService\obj\Debug\netcoreapp3.1\LoggerService.pdb

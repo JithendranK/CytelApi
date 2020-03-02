@@ -1,0 +1,7 @@
+D:\CytelProjects\CytelApi\Contracts\bin\Debug\netcoreapp3.1\Contracts.deps.json
+D:\CytelProjects\CytelApi\Contracts\bin\Debug\netcoreapp3.1\Contracts.dll
+D:\CytelProjects\CytelApi\Contracts\bin\Debug\netcoreapp3.1\Contracts.pdb
+D:\CytelProjects\CytelApi\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfoInputs.cache
+D:\CytelProjects\CytelApi\Contracts\obj\Debug\netcoreapp3.1\Contracts.AssemblyInfo.cs
+D:\CytelProjects\CytelApi\Contracts\obj\Debug\netcoreapp3.1\Contracts.dll
+D:\CytelProjects\CytelApi\Contracts\obj\Debug\netcoreapp3.1\Contracts.pdb

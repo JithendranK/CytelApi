@@ -187,3 +187,12 @@ D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\Cytel.Top.A
 D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\Cytel.Top.SQS.dll
 D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\Cytel.Top.Api.pdb
 D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\Cytel.Top.SQS.pdb
+D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\Cytel.Top.Api.xml
+D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\nlog.config
+D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\NLog.dll
+D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\Contracts.dll
+D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\LoggerService.dll
+D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\Contracts.pdb
+D:\CytelProjects\CytelApi\Cytel.Top.Api.Test\bin\Debug\netcoreapp3.1\LoggerService.pdb
