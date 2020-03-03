@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Cytel.Top.Api.Controllers
+namespace Cytel.Top.Api.Services
 {
-    [Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [ApiVersion("1.1")]
+    [ApiController]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class ValuesController : Controller
     {
         // GET: api/<controller>
@@ -16,6 +19,13 @@ namespace Cytel.Top.Api.Controllers
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
+        }
+
+        // GET: api/<controller>
+        [HttpGet,  MapToApiVersion("1.1")]
+        public IEnumerable<string> Get_Values()
+        {
+            return new string[] { "value1", "value2", "value3", "value4" };
         }
 
         // GET api/<controller>/5

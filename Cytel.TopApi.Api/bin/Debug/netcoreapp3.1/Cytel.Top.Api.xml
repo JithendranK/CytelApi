@@ -55,46 +55,6 @@
             </summary>
             <param name="_input"></param>
         </member>
-        <member name="T:Cytel.Top.Api.Interfaces.IS3Service">
-            <summary>
-            Interface created for S3 operations, Abstraction layer for S3 Service
-            </summary>
-        </member>
-        <member name="M:Cytel.Top.Api.Interfaces.IS3Service.CreateBucketAsync(System.String)">
-            <summary>
-            Interface Method for creating a S3 bucket
-            </summary>
-            <param name="bucketName"></param>
-            <returns></returns>
-        </member>
-        <member name="M:Cytel.Top.Api.Interfaces.IS3Service.GetObjectFromS3Async(System.String,System.String)">
-            <summary>
-            Interface Method for reading an Object from S3
-            </summary>
-            <param name="bucketName"></param>
-            <param name="keyName"></param>
-            <returns></returns>
-        </member>
-        <member name="T:Cytel.Top.Api.Interfaces.IStudyService">
-            <summary>
-            Interface used to create an abstraction layer for the database operations.
-            </summary>
-        </member>
-        <member name="T:Cytel.Top.Api.Models.S3Response">
-            <summary>
-            Response Class structure for S3 Bucket api endpoints
-            </summary>
-        </member>
-        <member name="P:Cytel.Top.Api.Models.S3Response.Status">
-            <summary>
-            Stores the Status code from the API
-            </summary>
-        </member>
-        <member name="P:Cytel.Top.Api.Models.S3Response.Message">
-            <summary>
-            Respose Message from the API
-            </summary>
-        </member>
         <member name="T:Cytel.Top.Api.Services.S3Service">
             <summary>
             Service class created for performing Create and Read S3 bucket operations
@@ -178,6 +138,46 @@
             Function created to update an entry in the input table
             </summary>
             <param name="item"></param>
+        </member>
+        <member name="T:Cytel.Top.Api.Interfaces.IS3Service">
+            <summary>
+            Interface created for S3 operations, Abstraction layer for S3 Service
+            </summary>
+        </member>
+        <member name="M:Cytel.Top.Api.Interfaces.IS3Service.CreateBucketAsync(System.String)">
+            <summary>
+            Interface Method for creating a S3 bucket
+            </summary>
+            <param name="bucketName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Cytel.Top.Api.Interfaces.IS3Service.GetObjectFromS3Async(System.String,System.String)">
+            <summary>
+            Interface Method for reading an Object from S3
+            </summary>
+            <param name="bucketName"></param>
+            <param name="keyName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Cytel.Top.Api.Interfaces.IStudyService">
+            <summary>
+            Interface used to create an abstraction layer for the database operations.
+            </summary>
+        </member>
+        <member name="T:Cytel.Top.Api.Models.S3Response">
+            <summary>
+            Response Class structure for S3 Bucket api endpoints
+            </summary>
+        </member>
+        <member name="P:Cytel.Top.Api.Models.S3Response.Status">
+            <summary>
+            Stores the Status code from the API
+            </summary>
+        </member>
+        <member name="P:Cytel.Top.Api.Models.S3Response.Message">
+            <summary>
+            Respose Message from the API
+            </summary>
         </member>
     </members>
 </doc>
