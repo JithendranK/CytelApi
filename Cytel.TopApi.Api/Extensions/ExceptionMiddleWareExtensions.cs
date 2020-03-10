@@ -1,4 +1,5 @@
 ﻿using Contracts;
+using Cytel.Top.Api.Messages;
 using Cytel.Top.Api.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
@@ -22,12 +23,22 @@ namespace Cytel.Top.Api.Extensions
                     context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
                     context.Response.ContentType = "application/json";
                     var contextFeature = context.Features.Get<IExceptionHandlerFeature>();
-                    if(contextFeature !=null)
+                    string errorMsg = contextFeature.Error.ToString();
+                    string errorCode = context.Response.StatusCode.ToString();
+
+                    if (contextFeature !=null)
                     {
-                        logger.LogError($"Something went wrong: {contextFeature.Error}");
+                        if(contextFeature.Error is DivideByZeroException)
+                        {
+                            errorMsg = MessageResponses.ErrorMessages[MessageCodes.Message.DivideByZeroException.ToString()];
+                            errorCode = $"CY-{((int)MessageCodes.Message.DivideByZeroException).ToString()}";
+                        }
+                        
+                       
                         await context.Response.WriteAsync(new ErrorDetails
                         {
                             StatusCode = context.Response.StatusCode,
+                            ErrorCode= errorCode,
                             Message = "Internal Server Error"
                         }.ToString());
                     }

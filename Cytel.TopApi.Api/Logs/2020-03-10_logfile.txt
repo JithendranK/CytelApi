@@ -1,0 +1,19 @@
+2020-03-10 15:10:32.2764 INFO Fetching all the Students from the storage
+2020-03-10 15:10:32.3088 INFO Returning 3 students.
+2020-03-10 15:10:32.7833 ERROR Something went wrong: CY-1200 System.DivideByZeroException: Attempted to divide by zero.
+   at Cytel.Top.Api.Services.ValuesController.Get() in D:\CytelProjects\CytelApi\Cytel.TopApi.Api\Controllers\ValuesController.cs:line 43
+2020-03-10 15:12:00.5260 INFO Fetching all the Students from the storage
+2020-03-10 15:12:00.5430 INFO Returning 3 students.
+2020-03-10 15:12:00.5957 ERROR Something went wrong: CY-1200 
+2020-03-10 15:23:10.8873 INFO Fetching all the Students from the storage
+2020-03-10 15:23:10.9358 INFO Returning 3 students.
+2020-03-10 15:23:11.1874 ERROR Something went wrong: CY-1200 System.DivideByZeroException: Attempted to divide by zero.
+   at Cytel.Top.Api.Services.ValuesController.Get() in D:\CytelProjects\CytelApi\Cytel.TopApi.Api\Controllers\ValuesController.cs:line 43
+2020-03-10 15:40:51.2674 INFO Getting All Study Related Objects From Study Servce.
+2020-03-10 15:40:54.5813 INFO Successfully returned values
+2020-03-10 15:42:39.1390 INFO Getting All Study Related Objects From Study Servce.
+2020-03-10 15:42:41.1090 INFO Successfully returned values
+2020-03-10 15:42:49.8864 INFO Getting All Study Related Objects From Study Servce.
+2020-03-10 15:42:50.0068 INFO Successfully returned values
+2020-03-10 15:44:56.2089 INFO Getting All Study Related Objects From Study Servce.
+2020-03-10 15:45:02.5210 INFO Successfully returned values

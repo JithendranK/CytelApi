@@ -1,4 +1,5 @@
-﻿using Cytel.Top.Api.Interfaces;
+﻿using Cytel.Top.Api.DataAccess;
+using Cytel.Top.Api.Interfaces;
 using Cytel.Top.Api.Models;
 using Cytel.Top.SQS;
 using Dapper;
@@ -34,13 +35,13 @@ namespace Cytel.Top.Api.Services
        /// Initializes a new instance of NpgSQLConnection
        /// 
        /// </summary>
-        internal IDbConnection Connection
-        {
-            get
-            {
-                return new NpgsqlConnection(connectionString);
-            }
-        }
+        //internal IDbConnection Connection
+        //{
+        //    get
+        //    {
+        //        return new NpgsqlConnection(connectionString);
+        //    }
+        //}
 
         /// <summary>
         /// Add Method created to insert entries to the database
@@ -48,17 +49,22 @@ namespace Cytel.Top.Api.Services
         /// <param name="item"></param>
         public void Add(Study item)
         {
-            using (IDbConnection dbConnection = Connection)
+            //using (IDbConnection dbConnection = Connection)
+            //{
+            //    dbConnection.Open();
+            //    dbConnection.Execute("INSERT INTO public.\"Inputs\"(\"StudyName\",\"StudyStartDate\",\"EstimatedCompletionDate\",\"ProtocolID\",\"StudyGroup\",\"Phase\",\"PrimaryIndication\",\"SecondaryIndication\") VALUES(@StudyName,@StudyStartDate,@EstimatedCompletionDate,@ProtocolID,@StudyGroup,@Phase, @PrimaryIndication, @SecondaryIndication);", item);
+            //}
+
+            using(IDbConnection dbConnection = new DBManager("SQL").GetDatabasecOnnection())
             {
-                dbConnection.Open();
                 dbConnection.Execute("INSERT INTO public.\"Inputs\"(\"StudyName\",\"StudyStartDate\",\"EstimatedCompletionDate\",\"ProtocolID\",\"StudyGroup\",\"Phase\",\"PrimaryIndication\",\"SecondaryIndication\") VALUES(@StudyName,@StudyStartDate,@EstimatedCompletionDate,@ProtocolID,@StudyGroup,@Phase, @PrimaryIndication, @SecondaryIndication);", item);
             }
 
-            //Sends Message to SQS using SQSClient
-            using(SQSClient sqsClient = new SQSClient())
-            {
-                sqsClient.SendMessageTOSQS(JsonConvert.SerializeObject(item),item.ProtocolID);
-            }
+            ////Sends Message to SQS using SQSClient
+            //using(SQSClient sqsClient = new SQSClient())
+            //{
+            //    sqsClient.SendMessageTOSQS(JsonConvert.SerializeObject(item),item.ProtocolID);
+            //}
 
         }
 
@@ -68,10 +74,17 @@ namespace Cytel.Top.Api.Services
         /// <returns></returns>
         public IEnumerable<Study> FindAll()
         {
-            using (IDbConnection dbConnection = Connection)
+            //using (IDbConnection dbConnection = Connection)
+            //{
+            //    dbConnection.Open();
+            //    return dbConnection.Query<Study>("SELECT * FROM public.\"Inputs\"");
+            //}
+
+         //   using (IDbConnection dbConnection = new DBManager("SQL").GetDatabasecOnnection())
+            using (IDbConnection dbConnection = new DBManager("SQL").GetDatabasecOnnection())
             {
-                dbConnection.Open();
-                return dbConnection.Query<Study>("SELECT * FROM public.\"Inputs\"");
+                // return dbConnection.Query<Study>("SELECT * FROM public.\"Inputs\"");
+                return dbConnection.Query<Study>("SELECT * FROM Study");
             }
         }
 
@@ -82,7 +95,7 @@ namespace Cytel.Top.Api.Services
         /// <returns></returns>
         public Study FindByID(int id)
         {
-            using (IDbConnection dbConnection = Connection)
+            using (IDbConnection dbConnection = new DBManager("PostgreSQL").GetDatabasecOnnection())
             {
                 dbConnection.Open();
                 return dbConnection.Query<Study>("SELECT * FROM public.\"Inputs\" WHERE id = @Id", new { Id = id }).FirstOrDefault();
@@ -95,7 +108,7 @@ namespace Cytel.Top.Api.Services
         /// <param name="id"></param>
         public void Remove(int id)
         {
-            using (IDbConnection dbConnection = Connection)
+            using (IDbConnection dbConnection = new DBManager("PostgreSQL").GetDatabasecOnnection())
             {
                 dbConnection.Open();
                 dbConnection.Execute("DELETE FROM Inputs WHERE Id=@Id", new { Id = id });
@@ -108,7 +121,7 @@ namespace Cytel.Top.Api.Services
         /// <param name="item"></param>
         public void Update(Study item)
         {
-            using (IDbConnection dbConnection = Connection)
+            using (IDbConnection dbConnection = new DBManager("PostgreSQL").GetDatabasecOnnection())
             {
                 dbConnection.Open();
                 dbConnection.Query("UPDATE Inputs SET name = @Name,  phone  = @Phone, email= @Email, address= @Address WHERE id = @Id", item);

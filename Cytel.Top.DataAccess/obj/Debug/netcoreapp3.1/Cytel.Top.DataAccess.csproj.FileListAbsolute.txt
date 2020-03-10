@@ -1,0 +1,7 @@
+D:\CytelProjects\CytelApi\Cytel.Top.DataAccess\obj\Debug\netcoreapp3.1\Cytel.Top.DataAccess.AssemblyInfoInputs.cache
+D:\CytelProjects\CytelApi\Cytel.Top.DataAccess\obj\Debug\netcoreapp3.1\Cytel.Top.DataAccess.AssemblyInfo.cs
+D:\CytelProjects\CytelApi\Cytel.Top.DataAccess\bin\Debug\netcoreapp3.1\Cytel.Top.DataAccess.deps.json
+D:\CytelProjects\CytelApi\Cytel.Top.DataAccess\bin\Debug\netcoreapp3.1\Cytel.Top.DataAccess.dll
+D:\CytelProjects\CytelApi\Cytel.Top.DataAccess\bin\Debug\netcoreapp3.1\Cytel.Top.DataAccess.pdb
+D:\CytelProjects\CytelApi\Cytel.Top.DataAccess\obj\Debug\netcoreapp3.1\Cytel.Top.DataAccess.dll
+D:\CytelProjects\CytelApi\Cytel.Top.DataAccess\obj\Debug\netcoreapp3.1\Cytel.Top.DataAccess.pdb

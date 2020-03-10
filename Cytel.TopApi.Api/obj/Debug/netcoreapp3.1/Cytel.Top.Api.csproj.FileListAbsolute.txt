@@ -350,8 +350,6 @@ D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\Swashbuckle.A
 D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
-D:\CytelProjects\CytelApi\Cytel.TopApi.Api\obj\Debug\netcoreapp3.1\Cytel.Top.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\CytelProjects\CytelApi\Cytel.TopApi.Api\obj\Debug\netcoreapp3.1\Cytel.Top.Api.MvcApplicationPartsAssemblyInfo.cache
 D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\Cytel.Top.Api.xml
 D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\nlog.config
 D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\NLog.dll
@@ -360,3 +358,13 @@ D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\Contracts.dll
 D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\LoggerService.dll
 D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\LoggerService.pdb
 D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\Contracts.pdb
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\obj\Debug\netcoreapp3.1\Cytel.Top.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\obj\Debug\netcoreapp3.1\Cytel.Top.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\obj\Debug\netcoreapp3.1\Cytel.Top.Api.CytelMessages.resources
+D:\CytelProjects\CytelApi\Cytel.TopApi.Api\obj\Debug\netcoreapp3.1\Cytel.Top.Api.csproj.GenerateResource.cache

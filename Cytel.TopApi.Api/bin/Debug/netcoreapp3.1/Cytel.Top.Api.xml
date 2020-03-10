@@ -102,12 +102,6 @@
             </summary>
             <param name="configuration"></param>
         </member>
-        <member name="P:Cytel.Top.Api.Services.StudyService.Connection">
-            <summary>
-            Initializes a new instance of NpgSQLConnection
-            
-            </summary>
-        </member>
         <member name="M:Cytel.Top.Api.Services.StudyService.Add(Cytel.Top.Api.Models.Study)">
             <summary>
             Add Method created to insert entries to the database
